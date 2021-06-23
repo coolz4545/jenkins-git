@@ -9,8 +9,9 @@ pipeline {
                     echo "Multiline shell steps works too..ddd"
                     ls -lah
                 '''
-                sh '${WORKSPACE}/temp.sh'
-
+               '
+                       sh "chmod +x -R ${env.WORKSPACE}"
+                        sh "./temp.sh"
 
             }
         }
