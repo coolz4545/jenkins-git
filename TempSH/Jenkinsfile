@@ -9,7 +9,7 @@ pipeline {
                     echo "Multiline shell steps works too..ddd"
                     ls -lah
                 '''
-                sh '.\temp.sh'
+                sh '${WORKSPACE}/temp.sh'
 
 
             }
