@@ -11,7 +11,7 @@ pipeline {
                 '''
 
                 echo "sh path: ${WORKSPACE}/TempSH/temp.sh"
-                ./temp.sh
+                
                 sh  "${WORKSPACE}/TempSH/temp.sh"
 
             }
