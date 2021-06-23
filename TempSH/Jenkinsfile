@@ -10,8 +10,8 @@ pipeline {
                     ls -lah
                 '''
 
-                echo "${WORKSPACE}/TempSH/temp.sh"
-                sh "${WORKSPACE}/TempSH/temp.sh"
+                echo "sh path: ${WORKSPACE}/TempSH/temp.sh"
+                sh '${WORKSPACE}/TempSH/temp.sh'
             }
         }
     }
