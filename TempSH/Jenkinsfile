@@ -10,7 +10,7 @@ pipeline {
                     ls -lah
                 '''
                        sh "chmod +x -R ${env.WORKSPACE}"
-                        sh "./temp.sh"
+                        sh '''./temp.sh"'''
 
             }
         }
