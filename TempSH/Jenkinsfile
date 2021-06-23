@@ -10,7 +10,7 @@ pipeline {
                     ls -lah
                 '''
                 cd ${WORKSPACE}/TempSH
-                ./temp.sh
+                sh temp.sh
 
 
             }
